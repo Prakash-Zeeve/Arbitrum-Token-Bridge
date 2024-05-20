@@ -53,7 +53,7 @@ export function Layout(props: LayoutProps) {
       />
       <div className="relative flex flex-col sm:min-h-screen">
         <div className="flex flex-row">
-          <AppSidebar />
+          {/* <AppSidebar /> */}
 
           <main className="grow">
             <SiteBanner expiryDate="2024-04-07 12:00">
