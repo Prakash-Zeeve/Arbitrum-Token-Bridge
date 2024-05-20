@@ -55,7 +55,7 @@ export function getBridgeUiConfigForChain(chainId: number): BridgeUiConfig {
         ...ethereumBaseConfig,
         network: {
           ...ethereumBaseConfig.network,
-          name: 'Ethereum Local'
+          name: 'Ethereum Sepolia'
         }
       }
     case ChainId.ArbitrumOne:
@@ -69,21 +69,21 @@ export function getBridgeUiConfigForChain(chainId: number): BridgeUiConfig {
             'Rollup protocol. The original Arbitrum chain. Secured by functional fraud proofs.'
         }
       }
-    case ChainId.ArbitrumSepolia:
-      return {
-        ...arbitrumBaseConfig,
-        network: {
-          ...arbitrumBaseConfig.network,
-          name: 'Arbitrum Sepolia',
-          description: 'The current recommended Arbitrum testnet.'
-        }
-      }
+    // case ChainId.ArbitrumSepolia:
+    //   return {
+    //     ...arbitrumBaseConfig,
+    //     network: {
+    //       ...arbitrumBaseConfig.network,
+    //       name: 'Arbitrum Sepolia',
+    //       description: 'The current recommended Arbitrum testnet.'
+    //     }
+    //   }
     case ChainId.ArbitrumLocal:
       return {
         ...arbitrumBaseConfig,
         network: {
           ...arbitrumBaseConfig.network,
-          name: 'Arbitrum Local'
+          name: 'Arbitrum Sepolia'
         }
       }
     case ChainId.ArbitrumNova:
