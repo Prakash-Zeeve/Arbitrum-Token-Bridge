@@ -82,7 +82,9 @@ export function chainIdToInfuraUrl(chainId: ChainId) {
     case ChainId.ArbitrumOne:
       return `https://arbitrum-mainnet.infura.io/v3/${infuraKey}`
     case ChainId.ArbitrumSepolia:
-      return infuraKey!.length === 0 ? process.env.NEXT_PUBLIC_LOCAL_ARBITRUM_RPC_URL : `https://arbitrum-sepolia.infura.io/v3/${infuraKey}`
+      return infuraKey!.length === 0
+        ? process.env.NEXT_PUBLIC_LOCAL_ARBITRUM_RPC_URL
+        : `https://arbitrum-sepolia.infura.io/v3/${infuraKey}`
     default:
       return undefined
   }
