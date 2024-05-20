@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
-import ZkasinoLogo from '@/images/zkasinoLogo.png'
+import ArbitrumLogoSmall from '@/images/ArbitrumLogo.svg'
 
 import { isNetwork } from '../../util/networks'
 import { useNetworks } from '../../hooks/useNetworks'
@@ -22,14 +22,14 @@ export function Header({ children }: { children?: React.ReactNode }) {
     >
       <div className="flex w-full items-center justify-end gap-2 text-white">
         <Image
-          className="mr-auto aspect-[813/316] w-20"
-          src={ZkasinoLogo}
-          alt="Zkasino"
+          className="mr-auto h-6 w-6 sm:hidden"
+          src={ArbitrumLogoSmall}
+          alt="Arbitrum"
         />
         {isTestnet && <span className="grow font-medium">TESTNET MODE</span>}
         <div className="hidden sm:flex">{children}</div>
       </div>
-      {/* <AppMobileSidebar /> */}
+      <AppMobileSidebar />
     </header>
   )
 }
