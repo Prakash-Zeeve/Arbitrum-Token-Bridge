@@ -8,5 +8,7 @@ module.exports = {
   trailingComma: 'none',
 
   // Plugins
-  plugins: [require('prettier-plugin-tailwindcss')]
+  plugins: [require('prettier-plugin-tailwindcss')],
+    eslintIntegration: false, // Disables ESLint integration
+  tslintIntegration: false // Disables TSLint integration
 }
