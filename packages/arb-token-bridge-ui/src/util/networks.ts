@@ -171,7 +171,7 @@ export const rpcURLs: { [chainId: number]: string } = {
   [ChainId.ArbitrumNova]: 'https://nova.arbitrum.io/rpc',
   // L2 Testnets
   [ChainId.ArbitrumSepolia]: loadEnvironmentVariableWithFallback({
-    env: chainIdToInfuraUrl(ChainId.ArbitrumSepolia),
+    env: "",
     fallback: 'https://sepolia-rollup.arbitrum.io/rpc'
   }),
   // Orbit Testnets
