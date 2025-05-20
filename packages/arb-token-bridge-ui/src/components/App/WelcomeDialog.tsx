@@ -28,7 +28,7 @@ export function WelcomeDialog() {
   }, [openConnectModal, setTosAccepted])
 
   return (
-    <div className="mx-4 my-16 max-w-[380px] overflow-hidden rounded border border-gray-dark bg-gray-1 pt-3 text-white sm:mx-auto">
+    <div className="mx-4 my-16 max-w-[380px] overflow-hidden rounded border border-gray-dark bg-[#12172A] pt-3 text-white sm:mx-auto">
       <p className="px-4 text-xl">Welcome</p>
       <div className="flex flex-col gap-3 p-4">
         <div className="flex flex-col gap-1 rounded bg-white/10 p-3 text-sm">
@@ -46,7 +46,7 @@ export function WelcomeDialog() {
           .
         </p>
       </div>
-      <div className="flex flex-row justify-end space-x-2 bg-[#3B3B3B] px-4 py-2">
+      <div className="flex flex-row justify-end space-x-2 px-4 py-2">
         <Button
           variant="primary"
           onClick={closeHandler}

@@ -139,7 +139,7 @@ export const TransactionStatusInfo = () => {
     if (numPendingTransactions > 0) {
       return 'bg-cyan-dark'
     }
-    return 'bg-gray-1 text-white/70'
+    return 'bg-[#12172A] text-white/70'
   }, [numClaimableTransactions, numPendingTransactions, numRetryablesToRedeem])
 
   return (
