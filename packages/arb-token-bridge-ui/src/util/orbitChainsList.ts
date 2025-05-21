@@ -69,14 +69,14 @@ export const orbitTestnets: { [key in number]: OrbitChainConfig } = {
       color: '#55A1F7',
       network: {
         name: 'AcadChain',
-        logo: '/logo.png',
+        logo: '/logo-white.png',
         description: 'Testnet chain for Orbit deployment'
       },
       nativeTokenData: {
         name: 'ACAD',
         symbol: 'ACAD',
         decimals: 18,
-        logoUrl: '/logo.png'
+        logoUrl: '/logo-white.png'
       }
     }
   }
