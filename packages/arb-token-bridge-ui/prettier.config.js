@@ -9,6 +9,6 @@ module.exports = {
 
   // Plugins
   plugins: [require('prettier-plugin-tailwindcss')],
-    eslintIntegration: false, // Disables ESLint integration
+  eslintIntegration: false, // Disables ESLint integration
   tslintIntegration: false // Disables TSLint integration
 }
