@@ -63,7 +63,7 @@ export function HeaderAccountPopover({
           'sm:w-max sm:rounded sm:border sm:px-2 sm:py-1',
           isTestnet
             ? 'sm:border-white sm:ui-not-open:bg-white/20'
-            : 'sm:border-gray-1 sm:ui-not-open:bg-[#12172A] sm:ui-not-open:hover:bg-white/20'
+            : 'sm:border-gray-1 sm:ui-not-open:bg-[#1E1E1E] sm:ui-not-open:hover:bg-white/20'
         )}
         role="button"
         aria-label="Account Header Button"
@@ -85,7 +85,7 @@ export function HeaderAccountPopover({
         <ChevronDownIcon className="ml-auto h-[16px] w-[16px] text-gray-4 transition duration-200 sm:text-white" />
       </Popover.Button>
       <Transition className="w-full sm:absolute sm:top-0">
-        <Popover.Panel className="flex w-full flex-col overflow-hidden rounded pb-2 sm:absolute sm:top-0 sm:bg-[#12172A]">
+        <Popover.Panel className="flex w-full flex-col overflow-hidden rounded pb-2 sm:absolute sm:top-0 sm:bg-[#1E1E1E]">
           {/* Profile photo with address */}
           {showCopied && (
             <span className="absolute right-2 top-4 z-50 text-xs text-white">
@@ -94,7 +94,7 @@ export function HeaderAccountPopover({
           )}
           <div className="relative hidden w-full flex-row items-center px-2 pb-2 pt-3 sm:flex">
             {/* Blurred background */}
-            <div className="absolute inset-0 flex h-8 w-full flex-col items-center overflow-hidden bg-[#12172A] text-center">
+            <div className="absolute inset-0 flex h-8 w-full flex-col items-center overflow-hidden bg-[#1E1E1E] text-center">
               <div className="scale-400 blur-2xl filter">
                 <SafeImage
                   className="h-100 w-100 rounded-full"
@@ -125,7 +125,7 @@ export function HeaderAccountPopover({
             </div>
           </div>
 
-          <div className="flex w-full flex-col justify-between bg-[#12172A] sm:flex-col sm:items-end sm:px-0">
+          <div className="flex w-full flex-col justify-between bg-[#1E1E1E] sm:flex-col sm:items-end sm:px-0">
             {/* Transactions button */}
             {isCorrectNetworkConnected && (
               <button

@@ -65,19 +65,19 @@ export const orbitTestnets: { [key in number]: OrbitChainConfig } = {
     blockTime: 0.25,
     nativeToken: '0x700f0539753926d65Da70dB03c7ddA2bAB0DB7d7',
     rpcUrl: 'https://rpc-testnet.acadchain.xyz',
-    slug: 'AcadChain',
+    slug: 'PropFTX',
     bridgeUiConfig: {
-      color: '#55A1F7',
+      color: '#AF6E5D',
       network: {
-        name: 'AcadChain',
-        logo: '/logo-white.png',
+        name: 'PropFTX',
+        logo: '/logo.svg',
         description: 'Testnet chain for Orbit deployment'
       },
       nativeTokenData: {
-        name: 'ACAD',
-        symbol: 'ACAD',
+        name: 'FTX',
+        symbol: 'FTX',
         decimals: 18,
-        logoUrl: '/logo-white.png'
+        logoUrl: '/logo.svg'
       }
     }
   }
