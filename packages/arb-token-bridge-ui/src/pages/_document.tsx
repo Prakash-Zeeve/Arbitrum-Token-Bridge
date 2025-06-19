@@ -10,7 +10,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.svg" />
 
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={siteDescription} />
@@ -19,7 +19,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={siteDescription} />
-        <meta property="og:image" content={`${siteDomain}/og-image.png`} />
+        <meta property="og:image" content={`${siteDomain}/og-image.svg`} />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -27,7 +27,7 @@ export default function Document() {
         <meta property="twitter:url" content={siteDomain} />
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
-        <meta name="twitter:image" content={`${siteDomain}/og-image.png`} />
+        <meta name="twitter:image" content={`${siteDomain}/og-image.svg`} />
       </Head>
       <body>
         <Main />
