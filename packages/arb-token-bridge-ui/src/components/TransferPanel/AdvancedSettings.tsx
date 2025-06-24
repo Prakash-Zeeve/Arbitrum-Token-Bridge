@@ -204,7 +204,7 @@ export const AdvancedSettings = () => {
       <button
         onClick={handleVisibility}
         className={twMerge(
-          'arb-hover flex flex-row items-center text-sm text-white',
+          'arb-hover flex flex-row items-center text-sm text-black',
           collapsible ? '' : 'pointer-events-none'
         )}
       >
@@ -219,7 +219,7 @@ export const AdvancedSettings = () => {
         )}
       </button>
       <Transition isOpen={!collapsed}>
-        <div className="mt-2 rounded border border-white/30 bg-brick-dark p-2 text-white">
+        <div className="mt-2 rounded border border-white/30 bg-brick-dark p-2 text-black">
           <p className="text-sm font-light">
             {isEOA ? (
               <>
@@ -241,13 +241,13 @@ export const AdvancedSettings = () => {
               'my-1 flex w-full items-center rounded border px-2 py-1 shadow-input',
               inputLocked
                 ? 'border-white/20 bg-white/20'
-                : 'border-white bg-black/40',
+                : 'border-white bg-[#f8e8e3]/40',
               error ? 'border-red-400' : '',
               warning && !error ? 'border-yellow-500' : ''
             )}
           >
             <input
-              className="w-full bg-transparent text-white placeholder-white/50"
+              className="w-full bg-transparent text-black placeholder-white/50"
               placeholder={isEOA ? address : 'Enter Custom Destination Address'}
               value={destinationAddress}
               disabled={inputLocked}
@@ -277,7 +277,7 @@ export const AdvancedSettings = () => {
         )}
         {destinationAddress && !error && (
           <ExternalLink
-            className="arb-hover mt-2 flex w-fit items-center text-xs font-medium text-white/50"
+            className="arb-hover mt-2 flex w-fit items-center text-xs font-medium text-black/50"
             href={`${getExplorerUrl(
               isDepositMode ? childChain.id : parentChain.id
             )}/address/${destinationAddress}`}

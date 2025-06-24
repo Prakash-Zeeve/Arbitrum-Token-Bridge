@@ -28,9 +28,9 @@ const DetailsBox = ({
   header
 }: PropsWithChildren<{ header?: string }>) => {
   return (
-    <div className="my-2 flex w-full flex-col rounded border border-white/30 bg-black p-3 font-light text-white">
+    <div className="my-2 flex w-full flex-col rounded border border-white/30 bg-[#f8e8e3] p-3 font-light text-black">
       {header && (
-        <h4 className="mb-2 text-xs uppercase text-white/60">{header}</h4>
+        <h4 className="mb-2 text-xs uppercase text-black/60">{header}</h4>
       )}
       {children}
     </div>
@@ -99,7 +99,7 @@ export const TransactionsTableDetails = ({
           leaveFrom="opacity-70"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-black" aria-hidden="true" />
+          <div className="fixed inset-0 bg-[#f8e8e3]" aria-hidden="true" />
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-y-auto">
@@ -116,7 +116,7 @@ export const TransactionsTableDetails = ({
             >
               <Dialog.Panel className="h-screen w-screen transform overflow-hidden rounded border border-white/10 bg-dark p-4 text-left align-middle shadow shadow-white/10 transition-all sm:h-auto sm:w-full sm:max-w-[488px]">
                 <Dialog.Title
-                  className="mb-4 flex items-center justify-between text-lg font-light text-white"
+                  className="mb-4 flex items-center justify-between text-lg font-light text-black"
                   as="h3"
                 >
                   Transaction details
@@ -131,7 +131,7 @@ export const TransactionsTableDetails = ({
 
                 <DetailsBox>
                   <div className="flex flex-col space-y-3">
-                    <div className="flex justify-between text-xs text-white">
+                    <div className="flex justify-between text-xs text-black">
                       <span>{dayjs(tx.createdAt).format('MMMM DD, YYYY')}</span>
                       <span>{dayjs(tx.createdAt).format('h:mma')}</span>
                     </div>
@@ -143,7 +143,7 @@ export const TransactionsTableDetails = ({
                         })}
                       </span>
                       {showPriceInUsd && (
-                        <span className="text-white/70">
+                        <span className="text-black/70">
                           {formatUSD(ethToUSD(Number(tx.value)))}
                         </span>
                       )}
@@ -183,7 +183,7 @@ export const TransactionsTableDetails = ({
                     {tx.isCctp ? (
                       <span>
                         CCTP{' '}
-                        <span className="text-white/70">
+                        <span className="text-black/70">
                           (Cross-Chain Transfer Protocol)
                         </span>
                       </span>

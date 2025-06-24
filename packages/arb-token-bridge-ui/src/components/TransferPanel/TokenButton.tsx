@@ -70,7 +70,7 @@ export function TokenButton(): JSX.Element {
         {({ open }) => (
           <>
             <Popover.Button
-              className="arb-hover h-full w-max rounded-bl rounded-tl px-3 py-3 text-white"
+              className="arb-hover h-full w-max rounded-bl rounded-tl px-3 py-3 text-black"
               aria-label="Select Token"
               onClick={onPopoverButtonClick}
             >

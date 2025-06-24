@@ -67,7 +67,7 @@ export const ArbitrumStats = () => {
   return (
     <div className="fixed bottom-0 right-0 m-4 flex flex-col gap-2 whitespace-nowrap rounded border border-gray-dark bg-dark py-2 pl-3 pr-7 font-[monospace] text-xs text-gray-3 opacity-90">
       <div className="section flex flex-col">
-        <span className="text-md flex items-center text-white">
+        <span className="text-md flex items-center text-black">
           <span className="mr-1 animate-pulse text-lg text-green-300">
             &bull;
           </span>{' '}
@@ -93,7 +93,7 @@ export const ArbitrumStats = () => {
       </div>
 
       <div className="section flex flex-col">
-        <span className="text-md flex items-center text-white">
+        <span className="text-md flex items-center text-black">
           <span className="mr-1 animate-pulse text-lg text-green-300">
             &bull;
           </span>{' '}

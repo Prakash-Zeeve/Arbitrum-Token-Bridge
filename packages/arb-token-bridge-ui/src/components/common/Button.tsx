@@ -15,7 +15,7 @@ function getClassNameForVariant(variant: ButtonVariant) {
       return 'hover:(not:disabled):opacity-70 active:(not:disabled):opacity-80'
 
     case 'tertiary':
-      return 'bg-transparent border-transparent text-white'
+      return 'bg-transparent border-transparent text-black'
   }
 }
 
@@ -60,7 +60,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         disabled={disabled}
         className={twMerge(
           'arb-hover relative w-max rounded border bg-[#AF6E5D] p-2 text-sm',
-          'text-white disabled:cursor-not-allowed disabled:border disabled:border-white/10 disabled:bg-white/10 disabled:text-white/50',
+          'text-black disabled:cursor-not-allowed disabled:border disabled:border-[#AF6E5D]/20 disabled:bg-[#AF6E5D]/20 disabled:text-black/50',
           getClassNameForVariant(variant),
           customClassName
         )}

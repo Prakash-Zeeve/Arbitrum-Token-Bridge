@@ -91,7 +91,7 @@ function TokenListRow({ tokenList }: { tokenList: BridgeTokenList }) {
   return (
     <label
       key={tokenList.id}
-      className="flex cursor-pointer items-center justify-start space-x-3 duration-200 [&:hover_img]:opacity-100 [&:hover_span]:text-white"
+      className="flex cursor-pointer items-center justify-start space-x-3 duration-200 [&:hover_img]:opacity-100 [&:hover_span]:text-black"
     >
       <Switch
         name={`${tokenList.name} toggle`}
@@ -112,7 +112,7 @@ function TokenListRow({ tokenList }: { tokenList: BridgeTokenList }) {
         <span
           className={twMerge(
             'text-sm transition-colors',
-            !isActive && 'text-white/70'
+            !isActive && 'text-black/70'
           )}
         >
           {tokenList.name}
@@ -146,7 +146,7 @@ function TokenListsPanel({ closePanel }: { closePanel: () => void }) {
       <SearchPanel.PageTitle title="Token Lists">
         <SearchPanel.CloseButton onClick={closePanel} />
       </SearchPanel.PageTitle>
-      <div className="flex flex-col gap-6 rounded-md border border-gray-dark p-6 text-white">
+      <div className="flex flex-col gap-6 rounded-md border border-gray-dark p-6 text-black">
         {listsToShow.map(tokenList => (
           <TokenListRow key={tokenList.id} tokenList={tokenList} />
         ))}

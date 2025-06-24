@@ -49,7 +49,7 @@ export function OneNovaTransferDialog(
         sourceChainId
       )} to ${getNetworkName(destinationChainId ?? 0)}`}
       actionButtonProps={{ hidden: true }}
-      className="max-w-[700px]"
+      className="max-w-[700px] text-black"
     >
       <div className="flex flex-col pt-4">
         <Tab.Group>
