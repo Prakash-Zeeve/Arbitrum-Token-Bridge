@@ -83,7 +83,7 @@ function ChainTypeInfoRow({
           'before:-mt-3 before:mb-3 before:block before:h-[1px] before:w-full before:bg-white/30 before:content-[""]'
       )}
     >
-      <p className="text-sm text-white/70">{name}</p>
+      <p className="text-sm text-black/70">{name}</p>
       {description}
     </div>
   )
@@ -117,8 +117,8 @@ function NetworkRow({
       type="button"
       aria-label={`Switch to ${network.name}`}
       className={twMerge(
-        'flex h-[90px] w-full items-center gap-4 px-4 py-2 text-lg transition-[background] duration-200 hover:bg-white/10',
-        chainId === sourceChain.id && 'bg-white/10' // selected row
+        'flex h-[90px] w-full items-center gap-4 px-4 py-2 text-lg transition-[background] duration-200 hover:bg-white/50',
+        chainId === sourceChain.id && 'bg-white' // selected row
       )}
     >
       <NetworkImage
@@ -129,11 +129,11 @@ function NetworkRow({
       <div className={twMerge('flex flex-col items-start gap-1')}>
         <span className="truncate leading-[1.1]">{network.name}</span>
         {network.description && (
-          <p className="whitespace-pre-wrap text-left text-xs leading-[1.15] text-white/70">
+          <p className="whitespace-pre-wrap text-left text-xs leading-[1.15] text-black/70">
             {network.description}
           </p>
         )}
-        <p className="text-[10px] leading-none text-white/50">
+        <p className="text-[10px] leading-none text-black/50">
           {nativeTokenData?.symbol ?? 'ETH'} is the native gas token
         </p>
       </div>
@@ -357,7 +357,7 @@ export const NetworkSelectionContainer = ({
                 }
                 return (
                   <SearchPanel>
-                    <SearchPanel.MainPage className="flex h-full flex-col px-5 py-4">
+                    <SearchPanel.MainPage className="flex h-full flex-col rounded bg-[#f8e8e3] px-5 py-4">
                       <SearchPanel.PageTitle title="Select Network">
                         <SearchPanel.CloseButton onClick={onClose} />
                       </SearchPanel.PageTitle>

@@ -97,7 +97,7 @@ function MaxButton(props: MaxButtonProps) {
     <button
       type="button"
       className={twMerge(
-        'arb-hover px-2 py-2 text-sm font-light text-gray-6 sm:px-4',
+        'arb-hover px-2 py-2 text-sm font-light text-black/70 sm:px-4',
         className
       )}
       {...rest}
@@ -152,10 +152,10 @@ export function TransferPanelMainInput(props: TransferPanelMainInputProps) {
     <>
       <div
         className={twMerge(
-          'flex flex-row rounded border bg-black/40 shadow-2',
+          'flex flex-row rounded border bg-[#f8e8e3]/40 shadow-2',
           errorMessage
             ? 'border-brick text-brick'
-            : 'border-white/30 text-white'
+            : 'border-white/30 text-black'
         )}
       >
         <TokenButton />

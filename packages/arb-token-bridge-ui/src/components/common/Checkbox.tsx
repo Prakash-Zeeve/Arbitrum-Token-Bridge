@@ -28,7 +28,7 @@ export function Checkbox(props: CheckboxProps) {
       <Switch.Label
         className={twMerge(
           'cursor-pointer',
-          props.checked ? 'text-white' : 'text-gray-3'
+          props.checked ? 'text-black' : 'text-gray-3'
         )}
       >
         {props.label}

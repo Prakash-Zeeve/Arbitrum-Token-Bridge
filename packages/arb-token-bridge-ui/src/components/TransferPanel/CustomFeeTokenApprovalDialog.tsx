@@ -110,7 +110,7 @@ export function CustomFeeTokenApprovalDialog(
             alt={`${customFeeToken.name} logo`}
             className="h-6 w-6 grow-0"
             fallback={
-              <div className="flex h-6 w-6 items-center justify-center rounded-full border border-white/30 bg-gray-dark text-sm font-medium">
+              <div className="flex h-6 w-6 items-center justify-center rounded-full border border-black/50 bg-[#f8e8e3] text-sm font-medium">
                 ?
               </div>
             }
@@ -118,7 +118,7 @@ export function CustomFeeTokenApprovalDialog(
           <div className="flex flex-col">
             <div className="flex items-center space-x-1">
               <span className="text-base">{customFeeToken.symbol}</span>
-              <span className="text-xs text-white/70">
+              <span className="text-xs text-black/70">
                 {customFeeToken.name}
               </span>
             </div>

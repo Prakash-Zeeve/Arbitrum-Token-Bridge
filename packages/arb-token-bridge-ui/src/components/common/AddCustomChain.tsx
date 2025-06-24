@@ -287,14 +287,14 @@ export const AddCustomChain = () => {
       <textarea
         onChange={e => setChainJson(e.target.value)}
         placeholder="Paste the JSON configuration from the 'outputInfo.json' file that's generated at the end of the custom Orbit chain deployment."
-        className="min-h-[154px] w-full rounded border border-gray-dark bg-dark p-4 text-sm font-light text-white placeholder:text-white/70"
+        className="border-gray min-h-[154px] w-full rounded border bg-white p-4 text-sm font-light text-black placeholder:text-black/70"
       />
       {error && (
         <div className="relative">
-          <pre className="scroll mb-2 max-h-[400px] overflow-auto rounded border border-gray-dark bg-dark p-4 text-sm text-error">
+          <pre className="scroll border-gray mb-2 max-h-[400px] overflow-auto rounded border bg-white p-4 text-sm text-error">
             <button
               onClick={() => setError(null)}
-              className="arb-hover absolute right-4 top-4 text-white"
+              className="arb-hover absolute right-4 top-4 text-black"
             >
               <XMarkIcon width={20} />
             </button>
@@ -321,7 +321,7 @@ export const AddCustomChain = () => {
         <div className="mt-4">
           <div className="heading mb-4 text-lg">Live Orbit Chains</div>
           <table className="w-full text-left">
-            <thead className="border-b border-gray-dark">
+            <thead className="border-gray border-b">
               <tr>
                 <th className="pb-1 text-xs font-normal">ORBIT CHAIN</th>
                 <th className="pb-1 text-xs font-normal">ORBIT CHAIN ID</th>
@@ -332,10 +332,7 @@ export const AddCustomChain = () => {
             </thead>
             <tbody>
               {customChains.map(customChain => (
-                <tr
-                  key={customChain.chainID}
-                  className="border-b border-gray-dark"
-                >
+                <tr key={customChain.chainID} className="border-gray border-b">
                   <th className="max-w-[100px] truncate py-3 text-sm font-normal">
                     {customChain.name}
                   </th>
@@ -354,7 +351,7 @@ export const AddCustomChain = () => {
                         <EllipsisHorizontalIcon width={20} />
                       </Popover.Button>
                       <Transition>
-                        <Popover.Panel className="absolute bottom-6 right-0 flex w-[240px] flex-col rounded border border-gray-dark bg-dark text-sm font-normal text-white">
+                        <Popover.Panel className="border-gray absolute bottom-6 right-0 flex w-[240px] flex-col rounded border bg-white text-sm font-normal text-black">
                           <button
                             className="rounded-t p-4 text-left transition duration-300 hover:bg-[#AF6E5D]"
                             onClick={() => {

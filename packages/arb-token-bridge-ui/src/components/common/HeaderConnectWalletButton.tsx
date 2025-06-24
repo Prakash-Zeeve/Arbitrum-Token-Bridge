@@ -11,7 +11,7 @@ export function HeaderConnectWalletButton() {
             onClick={openConnectModal}
             type="button"
             className={twMerge(
-              'arb-hover flex w-full flex-row items-center border border-lime-dark bg-[#AF6E5D] px-[12px] py-2 text-white',
+              'arb-hover flex w-full flex-row items-center border border-lime-dark bg-[#AF6E5D] px-[12px] py-2 text-black',
               'sm:min-w-[198px] sm:rounded sm:bg-[#AF6E5D] sm:py-1 sm:pl-2 sm:pr-3 sm:text-base sm:font-normal'
             )}
           >

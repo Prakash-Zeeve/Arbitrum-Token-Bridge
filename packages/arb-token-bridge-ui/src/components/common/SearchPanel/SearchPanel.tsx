@@ -93,7 +93,7 @@ function CloseButton({
 }: React.HTMLAttributes<HTMLButtonElement>) {
   return (
     <button className={twMerge('arb-hover', className)} {...props}>
-      <XMarkIcon className="h-7 w-7 text-gray-7 lg:h-5 lg:w-5" />
+      <XMarkIcon className="h-7 w-7 text-black lg:h-5 lg:w-5" />
     </button>
   )
 }

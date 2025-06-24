@@ -23,7 +23,7 @@ export function BlockedDialog(props: DialogProps & { address: string }) {
           If you think this was an error, you can request a review by filing a{' '}
           <ExternalLink
             href={GET_HELP_LINK}
-            className="arb-hover text-white underline"
+            className="arb-hover text-black underline"
           >
             support ticket
           </ExternalLink>

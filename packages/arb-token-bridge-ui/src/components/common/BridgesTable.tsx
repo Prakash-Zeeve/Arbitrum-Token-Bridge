@@ -66,8 +66,8 @@ export function BridgesTable(props: {
   return (
     <div className="rounded border border-gray-dark">
       <table className="w-full overflow-hidden rounded">
-        <thead className="bg-black text-left">
-          <tr className="text-white">
+        <thead className="bg-[#f8e8e3] text-left">
+          <tr className="text-black">
             <th className="w-1/5 px-5 py-4 font-normal">Favorite</th>
             <th className="px-5 py-4 font-normal">Bridge</th>
             <th className="px-5 py-4 font-normal"></th>
@@ -77,7 +77,7 @@ export function BridgesTable(props: {
           {sortedFastBridges.map(bridge => (
             <tr
               key={bridge.name}
-              className="cursor-pointer rounded border-t border-white bg-black transition duration-300 hover:bg-white/20"
+              className="cursor-pointer rounded border-t border-black bg-white transition duration-300 hover:bg-white/20"
             >
               <td>
                 <ExternalLink
@@ -94,9 +94,9 @@ export function BridgesTable(props: {
                     className="arb-hover"
                   >
                     {isFavorite(bridge.name) ? (
-                      <StarIconSolid className="h-5 w-5 text-white" />
+                      <StarIconSolid className="h-5 w-5 text-black" />
                     ) : (
-                      <StarIconOutline className="h-5 w-5 text-white" />
+                      <StarIconOutline className="h-5 w-5 text-black" />
                     )}
                   </button>
                 </ExternalLink>

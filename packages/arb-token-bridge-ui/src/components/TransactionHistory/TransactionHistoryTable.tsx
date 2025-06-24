@@ -38,7 +38,7 @@ export const ContentWrapper = ({
   return (
     <div
       className={twMerge(
-        'w-full flex-col items-center rounded bg-[#191919] p-4 text-center text-xs text-white',
+        'w-full flex-col items-center rounded bg-white p-4 text-center text-xs text-black',
         className
       )}
     >
@@ -253,7 +253,7 @@ export const TransactionHistoryTable = (
             rowCount={transactions.length}
             headerHeight={52}
             headerRowRenderer={props => (
-              <div className="mx-4 flex w-[920px] border-b border-white/30 text-white">
+              <div className="mx-4 flex w-[920px] border-b border-white/30 text-black">
                 {props.columns}
               </div>
             )}

@@ -40,7 +40,7 @@ function GasFeeForClaimTxMessage({ networkName }: { networkName: string }) {
       className={twMerge(
         'grid items-center',
         'rounded bg-white/30 p-2 opacity-80',
-        'text-xs font-light text-white'
+        'text-xs font-light text-black'
       )}
     >
       You&apos;ll have to pay {networkName} gas fee upon claiming.
@@ -130,7 +130,7 @@ export function EstimatedGas({
       className={twMerge(
         'flex items-center justify-between',
         'rounded-md bg-white/30 p-2',
-        'text-right text-xs font-light text-white opacity-80'
+        'text-right text-xs font-light text-black opacity-80'
       )}
     >
       <div className="flex w-1/2 flex-row items-center gap-1">

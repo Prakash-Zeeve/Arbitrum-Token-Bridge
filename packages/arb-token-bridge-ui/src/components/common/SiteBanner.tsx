@@ -21,7 +21,7 @@ const SiteBannerArbiscanIncident = ({
     : false
 
   return (
-    <div className="bg-orange-dark px-4 py-[8px] text-center text-sm font-normal text-white">
+    <div className="bg-orange-dark px-4 py-[8px] text-center text-sm font-normal text-black">
       <div className="w-full">
         <p>
           <ExternalLink className="arb-hover underline" href={explorerUrl}>
@@ -117,7 +117,7 @@ export const SiteBanner = ({
 
   return (
     <div
-      className="bg-gradientCelebration px-4 py-[8px] text-center text-sm font-normal text-white"
+      className="bg-gradientCelebration px-4 py-[8px] text-center text-sm font-normal text-black"
       {...props}
     >
       <div className="w-full">{children}</div>

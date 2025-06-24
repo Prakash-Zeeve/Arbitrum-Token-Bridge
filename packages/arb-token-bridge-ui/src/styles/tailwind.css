@@ -15,7 +15,7 @@
   --toastify-text-color-error: #1a1c1d;
   --toastify-font-family: Roboto, sans-serif;
   --toastify-toast-min-height: 44px;
-  --blue-link: #1366C1;
+  --blue-link: #AF6E5D;
 }
 
 /* Firefox */
@@ -57,7 +57,7 @@
 #root,
 body {
   @apply min-h-screen;
-  @apply bg-black;
+  @apply bg-white;
   font-weight: 300;
 }
 
@@ -82,7 +82,7 @@ button:focus-visible,
 input:focus-visible {
   box-sizing: border-box;
   outline-offset: -2px;
-  outline: 2px solid rgb(0, 95, 204);
+  outline: 2px solid rgba(175, 110, 93, 1);
 }
 
 /*react error overlay hidden in dev mode while testing network switches which trow errors*/

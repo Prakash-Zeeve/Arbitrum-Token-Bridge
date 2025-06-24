@@ -52,7 +52,7 @@ export function HeaderAccountPopover({
   }
 
   const headerItemsClassName =
-    'arb-hover flex w-full flex-row items-center space-x-2 px-12 py-2 text-sm sm:text-sm text-gray-4 sm:text-white hover:bg-ocl-blue sm:px-4 sm:py-1'
+    'arb-hover flex w-full flex-row items-center space-x-2 px-12 py-2 text-sm sm:text-sm text-black sm:text-black hover:bg-white sm:px-4 sm:py-1'
 
   return (
     <Popover className="relative w-full px-4 sm:w-max sm:p-0">
@@ -62,8 +62,8 @@ export function HeaderAccountPopover({
           'ui-open:bg-white/20 ui-not-open:bg-transparent ui-not-open:hover:bg-white/20',
           'sm:w-max sm:rounded sm:border sm:px-2 sm:py-1',
           isTestnet
-            ? 'sm:border-white sm:ui-not-open:bg-white/20'
-            : 'sm:border-gray-1 sm:ui-not-open:bg-[#1E1E1E] sm:ui-not-open:hover:bg-white/20'
+            ? 'sm:border-[#AF6E5D]/50 sm:ui-not-open:bg-white/20'
+            : 'sm:border-gray-1 sm:ui-not-open:bg-[#FFF8F0] sm:ui-not-open:hover:bg-white/20'
         )}
         role="button"
         aria-label="Account Header Button"
@@ -75,26 +75,26 @@ export function HeaderAccountPopover({
             <CustomBoringAvatar size={isSmallScreen ? 24 : 40} name={address} />
           }
         />
-        <span className="flex flex-col text-justify text-base leading-extra-tight text-gray-4 sm:text-white">
+        <span className="flex flex-col text-justify text-base leading-extra-tight text-gray-4 sm:text-black">
           {ensName ?? udInfo.name ?? accountShort}
           {isSmartContractWallet && !isLoadingAccountType && (
             <span className="text-[10px]">Smart Contract Wallet</span>
           )}
         </span>
 
-        <ChevronDownIcon className="ml-auto h-[16px] w-[16px] text-gray-4 transition duration-200 sm:text-white" />
+        <ChevronDownIcon className="ml-auto h-[16px] w-[16px] text-gray-4 transition duration-200 sm:text-black" />
       </Popover.Button>
       <Transition className="w-full sm:absolute sm:top-0">
-        <Popover.Panel className="flex w-full flex-col overflow-hidden rounded pb-2 sm:absolute sm:top-0 sm:bg-[#1E1E1E]">
+        <Popover.Panel className="flex w-full flex-col overflow-hidden rounded pb-2 sm:absolute sm:top-0 sm:bg-[#f8e8e3]">
           {/* Profile photo with address */}
           {showCopied && (
-            <span className="absolute right-2 top-4 z-50 text-xs text-white">
+            <span className="absolute right-2 top-4 z-50 text-xs text-black">
               Copied to clipboard!
             </span>
           )}
           <div className="relative hidden w-full flex-row items-center px-2 pb-2 pt-3 sm:flex">
             {/* Blurred background */}
-            <div className="absolute inset-0 flex h-8 w-full flex-col items-center overflow-hidden bg-[#1E1E1E] text-center">
+            <div className="absolute inset-0 flex h-8 w-full flex-col items-center overflow-hidden bg-[#f8e8e3] text-center">
               <div className="scale-400 blur-2xl filter">
                 <SafeImage
                   className="h-100 w-100 rounded-full"
@@ -114,7 +114,7 @@ export function HeaderAccountPopover({
                 />
               </div>
               <button
-                className="flex translate-y-1 flex-row items-center gap-1 text-white/70 hover:text-white"
+                className="flex translate-y-1 flex-row items-center gap-1 text-black/70 hover:text-black"
                 onClick={() => copy(ensName ?? udInfo.name ?? address ?? '')}
               >
                 <span className="max-w-[10rem] overflow-hidden text-ellipsis text-sm">
@@ -125,14 +125,14 @@ export function HeaderAccountPopover({
             </div>
           </div>
 
-          <div className="flex w-full flex-col justify-between bg-[#1E1E1E] sm:flex-col sm:items-end sm:px-0">
+          <div className="flex w-full flex-col justify-between bg-[#f8e8e3] sm:flex-col sm:items-end sm:px-0">
             {/* Transactions button */}
             {isCorrectNetworkConnected && (
               <button
                 className={headerItemsClassName}
                 onClick={openTransactionHistory}
               >
-                <DocumentTextIcon className="h-3 w-3 text-white/60 sm:text-white" />
+                <DocumentTextIcon className="h-3 w-3 text-black/60 sm:text-black" />
                 <span>Transactions</span>
               </button>
             )}
@@ -143,7 +143,7 @@ export function HeaderAccountPopover({
                 href={`${getExplorerUrl(chain.id)}/address/${address}`}
                 className={headerItemsClassName}
               >
-                <ArrowTopRightOnSquareIcon className="h-3 w-3 text-white/60 sm:text-white" />
+                <ArrowTopRightOnSquareIcon className="h-3 w-3 text-black/60 sm:text-black" />
                 <span>Explorer</span>
               </ExternalLink>
             )}
@@ -154,7 +154,7 @@ export function HeaderAccountPopover({
                 className={headerItemsClassName}
                 onClick={() => setQueryParams({ settingsOpen: true })}
               >
-                <Cog6ToothIcon className="h-3 w-3 text-white/60 sm:text-white" />
+                <Cog6ToothIcon className="h-3 w-3 text-black/60 sm:text-black" />
                 <span>Settings</span>
               </button>
             )}
@@ -164,7 +164,7 @@ export function HeaderAccountPopover({
               className={headerItemsClassName}
               onClick={() => disconnect()}
             >
-              <ArrowLeftOnRectangleIcon className="h-3 w-3 text-white/60 sm:text-white" />
+              <ArrowLeftOnRectangleIcon className="h-3 w-3 text-black/60 sm:text-black" />
               <span>Disconnect</span>
             </button>
           </div>

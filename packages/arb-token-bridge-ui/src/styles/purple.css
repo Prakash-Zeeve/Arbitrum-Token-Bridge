@@ -43,14 +43,14 @@
 
 .arbitrum-classic-theme,
 .arbitrum-classic-theme .bg-dark,
-.arbitrum-classic-theme .bg-black,
+.arbitrum-classic-theme .bg-white,
 .arbitrum-classic-theme .bg-eth-dark,
 .arbitrum-classic-theme .bg-ocl-blue,
 .arbitrum-classic-theme .background-image,
 .arbitrum-classic-theme .bg-gradient-overlay,
 .arbitrum-classic-theme .lg\:bg-ocl-blue,
 .arbitrum-classic-theme .lg\:bg-dark,
-.arbitrum-classic-theme .lg\:bg-black,
+.arbitrum-classic-theme .lg\:bg-white,
 .arbitrum-classic-theme .bg-arb-one-dark,
 .arbitrum-classic-theme .bg-\[\#8d8e8e\],
 .arbitrum-classic-theme th,
@@ -84,7 +84,7 @@
 	border: 2px solid white !important
 }
 
-.arbitrum-classic-theme .hover\:text-white:hover,
+.arbitrum-classic-theme .hover\:text-black:hover,
 .arbitrum-classic-theme .hover\:bg-ocl-blue:hover,
 .arbitrum-classic-theme .header-menu-panel {
 	color: #8C89BC !important;

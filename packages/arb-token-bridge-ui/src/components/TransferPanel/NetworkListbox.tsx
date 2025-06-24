@@ -37,7 +37,7 @@ export function NetworkListbox({
         <>
           <Listbox.Button
             style={{ backgroundColor }}
-            className="arb-hover flex w-max items-center gap-1 rounded px-3 py-2 text-sm text-white md:gap-2 md:text-xl"
+            className="arb-hover flex w-max items-center gap-1 rounded px-3 py-2 text-sm text-black md:gap-2 md:text-xl"
           >
             <span className="max-w-[220px] truncate leading-extra-tight md:max-w-[250px]">
               {label} {getNetworkName(value.id)}
@@ -53,14 +53,14 @@ export function NetworkListbox({
           </Listbox.Button>
 
           <Transition className="absolute left-0 right-auto z-[1] min-w-full">
-            <Listbox.Options className="mt-2 flex max-h-[365px] min-w-full flex-col gap-[8px] overflow-y-auto overflow-x-hidden rounded border border-white/30 bg-gray-1 font-normal text-white">
+            <Listbox.Options className="mt-2 flex max-h-[365px] min-w-full flex-col gap-[8px] overflow-y-auto overflow-x-hidden rounded border border-black/30 bg-[#f8e8e3] font-normal text-black">
               {options.map(option => {
                 return (
                   <Listbox.Option
                     key={option.id}
                     value={option}
                     className={twMerge(
-                      'hover:white/20 flex h-12 cursor-pointer select-none items-center gap-2 px-3 py-2 transition-[background] duration-200 ui-selected:bg-white/20 ui-active:bg-white/20'
+                      'hover:white/50 flex h-12 cursor-pointer select-none items-center gap-2 px-3 py-2 transition-[background] duration-200 ui-selected:bg-white ui-active:bg-white/50'
                     )}
                   >
                     <div className="flex h-6 w-6 items-center justify-center">

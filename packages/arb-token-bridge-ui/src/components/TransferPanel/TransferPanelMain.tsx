@@ -89,7 +89,7 @@ export function SwitchNetworksButton(
         type="button"
         disabled={disabled}
         className={twMerge(
-          'group relative flex h-7 w-7 items-center justify-center rounded bg-gray-1 p-1',
+          'group relative flex h-7 w-7 items-center justify-center rounded bg-[#f8e8e3] p-1',
           disabled && 'pointer-events-none'
         )}
         onClick={() => {
@@ -103,9 +103,9 @@ export function SwitchNetworksButton(
       >
         <SwitchNetworkButtonBorderTop />
         {isSmartContractWallet ? (
-          <ArrowDownIcon className="h-6 w-6 stroke-1 text-white" />
+          <ArrowDownIcon className="h-6 w-6 stroke-1 text-black" />
         ) : (
-          <ArrowsUpDownIcon className="h-8 w-8 stroke-1 text-white transition duration-300 group-hover:rotate-180 group-hover:opacity-80" />
+          <ArrowsUpDownIcon className="h-8 w-8 stroke-1 text-black transition duration-300 group-hover:rotate-180 group-hover:opacity-80" />
         )}
         <SwitchNetworkButtonBorderBottom />
       </button>
@@ -309,7 +309,7 @@ function TokenBalance({
 
 function BalancesContainer({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col flex-nowrap items-end break-all text-sm tracking-[.25px] text-white sm:text-lg">
+    <div className="flex flex-col flex-nowrap items-end break-all text-sm tracking-[.25px] text-black sm:text-lg">
       {children}
     </div>
   )
@@ -670,7 +670,7 @@ export function TransferPanelMain({
           <NetworkSelectionContainer
             buttonStyle={buttonStyle}
             buttonClassName={twMerge(
-              'arb-hover flex w-max items-center gap-1 md:gap-2 rounded px-3 py-2 text-sm text-white outline-none md:text-2xl'
+              'arb-hover flex w-max items-center gap-1 md:gap-2 rounded px-3 py-2 text-sm text-black outline-none md:text-2xl'
             )}
             onChange={networkListboxProps.from.onChange}
           >
@@ -724,7 +724,7 @@ export function TransferPanelMain({
           />
 
           {showUSDCSpecificInfo && (
-            <p className="mt-1 text-xs font-light text-white">
+            <p className="mt-1 text-xs font-light text-black">
               Bridged USDC (USDC.e) will work but is different from Native USDC.{' '}
               <ExternalLink
                 href={USDC_LEARN_MORE_LINK}
@@ -737,7 +737,7 @@ export function TransferPanelMain({
           )}
 
           {isDepositMode && selectedToken && (
-            <p className="mt-1 text-xs font-light text-white">
+            <p className="mt-1 text-xs font-light text-black">
               Make sure you have {nativeCurrency.symbol} in your{' '}
               {getNetworkName(childChain.id)} account, as you’ll need it to
               power transactions.
