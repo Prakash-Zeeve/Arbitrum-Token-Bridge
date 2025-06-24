@@ -670,7 +670,7 @@ export function TransferPanelMain({
           <NetworkSelectionContainer
             buttonStyle={buttonStyle}
             buttonClassName={twMerge(
-              'arb-hover flex w-max items-center gap-1 md:gap-2 rounded px-3 py-2 text-sm text-white outline-none md:text-2xl'
+              'arb-hover flex w-max items-center gap-1 md:gap-2 rounded px-3 py-2 text-sm text-black outline-none md:text-2xl'
             )}
             onChange={networkListboxProps.from.onChange}
           >
